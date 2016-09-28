@@ -22,7 +22,7 @@ var meta = Meta({
 
 var stream = Storage({
   directory: process.env.PHANT_STORAGEDIR || 'phant_streams',
-  cap: process.env.PHANT_CAP || 2 * 1024 * 1024 * 1024, // 2gb
+  cap: process.env.PHANT_CAP || 512 * 1024 * 1024, // 2gb
   chunk: process.env.PHANT_CHUNK || 500 * 1024 // 500k
 });
 
